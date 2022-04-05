@@ -15,7 +15,7 @@
 <html>
   <head><title>Select colour page</title></head>
     <body>
-      <form action="confirmation.php"  method="post">
+      <form action="wk4confirmation.php"  method="post">
 	      Select the colour for the <?php echo intval($_SESSION['selqty']) ?> widgets you are ordering
        	<select name="selcolour">
        	  <option>white</option>

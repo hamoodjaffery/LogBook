@@ -13,7 +13,7 @@
 <html>
   <head><title>Select size page</title></head>
   <body>
-    <form action="selectcolour.php"  method="post">
+    <form action="wk4selectcolor.php"  method="post">
 	     Select the size of the <?php echo intval($_POST['selqty']) ?> widgets you are ordering
        <select name="selsize">
        	<option value ="Small">Small (£15.75)</option>
