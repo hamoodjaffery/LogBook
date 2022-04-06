@@ -6,7 +6,7 @@
     $username = 'root';
     $password = '';
 
-    $conn = mysqli_connect($servername, $username, $password, $db_name);
+    $sql = mysqli_connect($servername, $username, $password, $db_name);
 
     // Obtain the file sent to the server within the response.
     $image = $_FILES['monsterimage']['tmp_name'];
