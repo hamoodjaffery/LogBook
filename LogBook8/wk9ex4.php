@@ -1,5 +1,5 @@
 <?php
-     $conn = mysqli_connect("localhost", "root", "", "db1_21906325");
+     $sqli = mysqli_connect("localhost", "root", "12345", "test");
 
      if (isset($_POST['selweek'])){
        $sql = "select * from lotto where wk=$_POST[selweek];";
@@ -15,7 +15,7 @@
      }
      else {
        $sql = "select * from lotto;";
-       $result = mysqli_query($conn, $sql);
+       $result = mysqli_query($sqli, $sql);
 
        echo "<form action='$_SERVER[PHP_SELF]' method='post' >";
        echo "<br/>Select the lottery week ";
@@ -27,5 +27,5 @@
        echo "<input type='submit' value='Select' />";
        echo "</form>";
      }
-     mysqli_close($conn);
+     mysqli_close($sqli);
 ?>
