@@ -2,7 +2,7 @@
   if (isset($_POST['submit']))
   {
     $servername = 'localhost';
-    $db_name = 'db1_21906325';
+    $db_name = 'test';
     $username = 'root';
     $password = '';
 

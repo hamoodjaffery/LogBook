@@ -4,6 +4,7 @@
   $mysqli = new mysqli("localhost","root","12345","test");
 	$sql = "SELECT * from test";
 	// Execute sql statement
+	$result = mysqli_query($mysqli, $sql);
 	
 ?>
 <html>
@@ -16,4 +17,4 @@ while ($row = mysqli_fetch_assoc($result))
 }
 ?>
 </body>
-</html
+</html>
